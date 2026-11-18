@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "mio-sito-tools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://example.com/wp-json/ast/mcp",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Basic <base64 di utente:password-applicativa>"
+      }
+    },
+    "mio-sito-redazione": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://example.com/wp-json/ast/redazione",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Basic <base64 di redattore:password-applicativa>"
+      }
+    },
+    "mio-sito-elementor": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://example.com/wp-json/mcp/mcp-adapter-default-server",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Basic <base64 di utente:password-applicativa>"
+      }
+    }
+  }
+}
