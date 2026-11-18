@@ -1,0 +1,14 @@
+# Librerie di terze parti (da scaricare, vedi assets/vendor/LEGGIMI.md)
+plugin/agent-site-tools/assets/vendor/*.js
+
+# Credenziali e configurazioni locali
+.env
+*.local.json
+claude_desktop_config.json
+
+# Pacchetti e file di sistema
+*.zip
+*.tgz
+node_modules/
+.DS_Store
+Thumbs.db
